@@ -8,5 +8,6 @@ namespace LibraryApplication
 {
     class AssetStatus
     {
+
     }
 }
