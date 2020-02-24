@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace LibraryApplication
 {
+    /// <summary>
+    /// Specifies the status of an asset.
+    /// </summary>
     enum AssetStatus
     {
         NotAvailable,
@@ -14,6 +17,10 @@ namespace LibraryApplication
         Reserved
     }
 
+    /// <summary>
+    /// Class manages the assets of the library such as digital or paper copy of the library. 
+    /// Library users loans assets corresponding to particular books.
+    /// </summary>
     class LibraryAsset
     {
         //declaring an instance of a book
@@ -32,41 +39,39 @@ namespace LibraryApplication
             _book = book;
             _libID = libID;
         }
-
+        /// <summary>
+        /// Id specific for an instance of a library. Read-only attribute.
+        /// </summary>
         public int LibID
         {
             get { return _libID; }
         }
 
+        /// <summary>
+        /// Status of an asset. States whether the item is being currently used and how.
+        /// </summary>
         public AssetStatus Status
         {
             get { return _status; }
             set { _status = value; }
         }
 
+        /// <summary>
+        /// Period of time between an asset being borrowed and returned
+        /// </summary>
         public LoanPeriod LoanPeriod
         {
             get { return _loanPeriod; }
             set { _loanPeriod = value; }
 
         }
+        /// <summary>
+        /// Checking for availability of an asset(AssetStatus)
+        /// </summary>
         public bool isAvailable
         {
             get { return isAvailable; }
         }
-
-        public void Library-Asset(int _libID, Book book)
-        {
-
-        }
-
-
-
-
-
-
-
-
 
     }
 

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace LibraryApplication
 {
+    /// <summary>
+    /// The specialization of a Book class. Handles attributes and operations on digital books.
+    /// </summary>
     class PaperBook
     {
         //declaring a constant specifing the time it is allowed to keep a book for. The "const" keyword makes it impossible to change the value
@@ -22,8 +25,23 @@ namespace LibraryApplication
         {
             _bookName = bookName;
             _bookISBN = BookISBN;
+        }
+
+        ///Enables user to borrow the book.Changes status of the asset.
+        public LibraryAsset BorrowBook()
+        {
 
         }
+
+        ///Enables user to reurn the book.Changes the status of an asset and inserts an item to the list of currently available positions. The method is 
+        /// asking user for input of library id.
+        public TimeSpan Int decimal ReturnBook(int libID)
+        {
+
+        }
+
+
+
     }
 
 }

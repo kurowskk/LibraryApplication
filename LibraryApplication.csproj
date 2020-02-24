@@ -125,7 +125,6 @@
     <Compile Include="LibraryApplication.cs" />
     <Compile Include="LibraryAsset.cs" />
     <Compile Include="LoanPeriod.cs" />
-    <Compile Include="Main.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
