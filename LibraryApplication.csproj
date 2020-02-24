@@ -119,16 +119,13 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AssetStatus.cs" />
     <Compile Include="Book.cs" />
-    <Compile Include="BookMenuOption.cs" />
-    <Compile Include="BookType.cs" />
     <Compile Include="DigitalBook.cs" />
     <Compile Include="Library.cs" />
     <Compile Include="LibraryApplication.cs" />
     <Compile Include="LibraryAsset.cs" />
     <Compile Include="LoanPeriod.cs" />
-    <Compile Include="MainMenuOption.cs" />
+    <Compile Include="Main.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
